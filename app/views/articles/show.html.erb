@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+    <h1 class="text-center">Mostrar datos</h1>
+      <div class="form-group">
+        <label>Title:</label>
+        <%= @article.title %>
+      </div>
+       
+      <div class="form-group">
+        <label>Text:</label>
+        <%= @article.text %>
+      </div>
+      <%= link_to 'Edit', edit_article_path(@article),class: 'btn btn-primary' %> |
+      <%= link_to 'Back', articles_path,class: 'btn btn-primary' %>
+      
+    </div>
+  </div>
+</div>
